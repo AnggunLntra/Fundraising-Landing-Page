@@ -7,6 +7,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">	
 	<style type="text/css">
+		.text-primary{
+			color: rgb(	0, 44, 131) !important	;
+		}
 		.padding, .padding-our-program{
 			padding: 20px;
 		}
@@ -39,7 +42,8 @@
 		.bottom{
 			background-image: url(background-2.png);
 			background-size: cover;
-			background-position: center;
+			background-position: center	;
+			min-height: 50vh !important;
 		}
 
 		.box{
@@ -50,6 +54,18 @@
 
 		.justify-content{
 			justify-content: space-around;
+		}
+
+		.font-custom{
+			font-size: 	1.2em;
+		}		
+
+		.btn-donation-join{
+			flex-flow: column;
+		}
+
+		.align-items-footer{
+			align-items: start;
 		}
 
 		@media screen and (min-width: 1024px){
@@ -84,9 +100,10 @@
 
 			.bottom{
 				background-image: url(background-2.png);				
-				background-size: cover;
+				background-size: 100%;
 				background-repeat: no-repeat;
 				background-position: top;
+				min-height: 150vh !important;
 			}	
 			.box{
 				width: 35%;
@@ -96,7 +113,19 @@
 
 			.justify-content{
 				justify-content: space-between;
-			}				
+			}
+
+			.font-custom{
+				font-size: 	3em;
+			}
+
+			.btn-donation-join{
+				flex-flow: row;
+			}	
+			
+			.align-items-footer{
+				align-items: center;
+			}			
 		}
 	</style>
 </head>
@@ -122,7 +151,7 @@
 	</nav>
 	<section class="container-fluid mt-5">
 		<div class="row d-flex flex-column justify-content-center align-items-center min-vh-100 top">
-			<h1 class="fw-bolder text-primary text-center heading">Save The Oceans,<br />Feed The World</h1>
+			<h1 class="fw-bolder text-white text-center heading">Save The Oceans,<br />Feed The World</h1>
 			<div class="container text-center">
 				<p class="fs-6 fw-light mt-3">Restoring the ocean could feed 1 billion people a healthy seafood meal every day</p>
 				<a class="btn btn-warning px-5 py-2 mt-3 rounded-5">Donate now</a>
@@ -201,20 +230,19 @@
 				<div class="card padding" style="background: none; border: none">
 				  <div class="row">
 				    <div class="col-lg-5 text-center">				      
-				      <div style="margin: 0 30px"><div class="z-n1 bg-dark position-absolute p-5 rounded-3 box m-auto"></div></div>
 				      <img src="people.png" class="img-fluid rounded-start w-50">				      				   
 				    </div>
 				    <div class="col-lg-7 d-flex align-items-center padding">
 				      <div class="card-body">
 				        <h5 class="card-title text-warning">Our Stories</h5>
-				        <h2 class="card-subtitle text-primary">What Our Partner Say</h2>					        
+				        <h2 class="card-subtitle text-primary font-custom">What Our Partner Say</h2>					        
 				        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				        <h3 class="card-text">Rebbeca Glisclair</h3>
+				        <h3 class="card-text font-custom">Rebbeca Glisclair</h3>
 				        <p class="card-text"><small class="fw-light">Senior Director, Arctic Program</small></p>
 				      </div>
 				    </div>
@@ -222,17 +250,44 @@
 				</div>
 			</div>			
 		</div>
-		<div class="row justify-content-center padding mt-5 min-vh-100 bottom">
+		<div class="row justify-content-center padding mt-5 bottom">
 			<div class="with text-center">
-				<h1 class="fw-bold text-primary py-3">Save Ocean is working with you to protect the ocean from today's greatest global challanges.</h1>
+				<h1 class="fw-bold text-primary py-3 font-custom px-5">Save Ocean is working with you to protect the ocean from today's greatest global challanges.</h1>
 				<p class="fw-light py-3">Together, we create science-based solutions for a healthy ocean and the wildlife and communities that depend on it.</p>
-				<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-center btn-donation-join mb-5">
 					<a class="btn btn-warning py-2 px-5 rounded-5 m-2">Donate Now</a>
 					<a class="btn btn-primary bg-light text-primary py-2 px-5 rounded-5 m-2">Join Community</a>				
 				</div>
 			</div>
 		</div>		
 	</section>
+	<footer class="container-fluid text-white" style="background: rgb(0,14,69); margin-top: -40px;">
+		<div class="row align-items-footer padding">
+			<div class="col-3">
+				<img class="img-fluid" src="logo.png">
+			</div>
+			<div class="col-4">
+				<p class="fw-bold m-0">Save Ocean Project</p>
+				<p class="fw-light">
+					<small> 123-1234567<br />3333 S. 44rd St.<br />Chicago IL 456789</small>
+				</p>				
+			</div>
+			<div class="col-5">
+				<p class="fw-bold m-0">Subscribe to the Save Ocean Project</p>
+				<p class="fw-light">
+					<small>Connect with our community of volunteer</small>
+				</p>
+				<div class="row align-items-center">
+					<div class="col-lg-8 my-1">
+						<input type="email" class="form-control rounded-5">
+					</div>
+					<div class="col-lg-4">
+						<a class="btn btn-warning rounded-5">Subscribe</a>			
+					</div>
+				</div>
+			</div>			
+		</div>			
+	</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
