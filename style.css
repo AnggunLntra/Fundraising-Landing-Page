@@ -1,0 +1,172 @@
+.text-primary{
+    color: rgb(	0, 44, 131) !important	;
+}
+
+/*padding*/
+.padding, .padding-our-program{
+    padding: 20px;
+}
+
+.padding-donation-join{
+    padding: 40px 20px;
+}
+
+.py-donation-join{
+    padding: 80px 0 40px 0;
+}				
+
+.p-content-our-stories, .px-our-program{
+    padding: 0px;
+}		
+
+.padding-nav{
+    padding: 10px 20px;
+}
+
+.p-footer{
+    padding: 10px 20px;
+}
+
+/*margin*/
+.my-our-program{
+    margin: 20px 0;
+}
+
+/*width*/
+.width-paragraph-our-programs{
+    width: 100%;
+}
+
+/*background*/
+.top{
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom{
+    background-image: url(background-2.png);
+    background-size: cover;
+    background-position: center	;
+    min-height: 50vh !important;
+}
+
+/*font*/
+.font-h1 {
+    font-size: 2em;
+}
+
+.font-h4, .font-paragraph-about-us{
+    font-size: 1em;
+}		
+
+.font-subtittle{
+    font-size: 	1.8em;
+    margin-bottom: 5px;
+}
+
+.font-text{
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.font-paragraph-donation-join{
+    font-size: 1em;
+    color: white;
+}		
+
+/*flex*/
+.justify-content{
+    justify-content: space-around;
+}		
+
+.btn-donation-join{
+    flex-flow: column;
+}
+
+.align-items-footer{
+    align-items: start;
+}
+
+@media screen and (min-width: 1024px){
+
+    /*padding and margin*/
+    .padding, .p-content-our-stories, .padding-our-program, .px-our-program{
+        padding: 40px;
+    }
+
+    .padding-donation-join{
+        padding: 60px;
+    }
+
+    .padding-nav{
+        padding: 15px 70px;
+    }
+
+    .p-footer{
+    padding: 10px 40px;
+    }
+
+    .py-donation-join{
+        padding: 100px 0;
+    }
+
+    .my-our-program, .my-donation-join{
+        margin: 30px 0;
+    }
+
+    /*font*/
+    .font-h1 {
+        font-size: 4em;
+    }
+
+    .font-h4, .font-paragraph-about-us{
+        font-size: 1.4em;
+    }
+
+    .font-subtittle{
+        font-size: 	2.2em;
+        margin-bottom: 5px;
+    }
+
+    .font-text{
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .font-paragraph-donation-join{
+        font-size: 1.4em;
+    }			
+
+    /*width*/
+    .width-paragraph-our-programs{
+        width: 50%;
+    }
+
+    /*background*/
+    .top{
+        background-image: url(background.png);				
+        background-size: contain;
+    }
+
+    .bottom{
+        background-image: url(background-2.png);				
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 150vh !important;
+    }	
+
+    /*flex*/
+    .justify-content{
+        justify-content: space-between;
+    }
+
+    .align-items-footer{
+        align-items: center;
+    }
+
+    .btn-donation-join{
+        flex-flow: row;
+    }				
+}
